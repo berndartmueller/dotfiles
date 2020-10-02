@@ -1,9 +1,15 @@
 tap 'homebrew/cask'
 
+brew 'coreutils'
+brew 'openssl'
+brew 'git'
+brew 'gcc'
 brew 'mackup'
 brew 'mas'
-
+brew 'tmux'
 brew 'node'
+brew 'python'
+brew 'pipenv'
 
 # autossh
 brew 'autossh'
@@ -13,7 +19,6 @@ brew 'ripgrep'
 
 # https://github.com/sharkdp/bat
 brew 'bat'
-
 brew 'gifski'
 
 # Apps
@@ -52,6 +57,10 @@ cask 'teamviewer'
 cask 'textbar'
 cask 'vanilla'
 cask 'zoomus'
+
+cask 'postgres'
+cask 'redis'
+
 
 declare -a mas_apps=(
   '918858936'   # Airmail 4
