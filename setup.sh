@@ -6,3 +6,10 @@ for file in ./tools/*; do
 
     source "$file"
 done
+
+# NVM
+
+## Install
+
+chmod +x ~/.nvm/nvm.sh
+

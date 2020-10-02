@@ -1,0 +1,63 @@
+tap 'homebrew/cask'
+
+brew 'mackup'
+brew 'mas'
+
+brew 'node'
+
+# autossh
+brew 'autossh'
+
+# ripgrep
+brew 'ripgrep'
+
+# https://github.com/sharkdp/bat
+brew 'bat'
+
+brew 'gifski'
+
+# Apps
+# https://github.com/driesvints/dotfiles/blob/main/Brewfile
+cask '1password'
+cask '1password-cli'
+cask 'alfred'
+cask 'docker'
+cask 'figma'
+cask 'firefox'
+cask 'google-backup-and-sync'
+cask 'google-chrome'
+cask 'imageoptim'
+cask 'postman'
+cask 'skype'
+cask 'sublime-text'
+cask 'postico'
+cask 'the-unarchiver'
+cask 'transmit'
+cask 'visual-studio-code'
+cask 'vlc'
+cask 'spotify'
+cask 'app-cleaner'
+cask 'folx'
+cask 'iterm2'
+cask 'karabiner-elements'
+cask 'keyboardcleantool'
+cask 'ngrok'
+cask 'notion'
+cask 'rocket'
+cask 'runjs'
+cask 'signal'
+cask 'soundflowerbed'
+cask 'sourcetree'
+cask 'teamviewer'
+cask 'textbar'
+cask 'vanilla'
+cask 'zoomus'
+
+declare -a mas_apps=(
+  '918858936'   # Airmail 4
+  '441258766'   # Magnet
+)
+
+for app in "${mas_apps[@]}"; do
+  mas install "$app"
+done

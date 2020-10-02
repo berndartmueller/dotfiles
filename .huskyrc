@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#export SHELL=/bin/zsh
+#echo $0
+#sh -c 'ps -p $$ -o ppid=' | xargs ps -o comm= -p
+#source ~/.zshrc
+
+export NVM_DIR="$HOME/.nvm"
+
+if test -f ".nvmrc"; then
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm use
+fi
