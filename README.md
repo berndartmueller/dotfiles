@@ -44,3 +44,6 @@ brew install mackup
 mackup backup
 ```
 
+# Inspiration
+
+https://github.com/rkalis/dotfiles

@@ -10,6 +10,9 @@ brew 'tmux'
 brew 'node'
 brew 'python'
 brew 'pipenv'
+# brew install kubectl
+# brew install doctl
+brew install pulumi
 
 # autossh
 brew 'autossh'
@@ -19,12 +22,11 @@ brew 'ripgrep'
 
 # https://github.com/sharkdp/bat
 brew 'bat'
-brew 'gifski'
 
 # Apps
 # https://github.com/driesvints/dotfiles/blob/main/Brewfile
-cask '1password'
-cask '1password-cli'
+brew 'toggl-track'
+cask 'cryptomator'
 cask 'alfred'
 cask 'docker'
 cask 'figma'
@@ -36,7 +38,6 @@ cask 'postman'
 cask 'skype'
 cask 'sublime-text'
 cask 'postico'
-cask 'the-unarchiver'
 cask 'transmit'
 cask 'visual-studio-code'
 cask 'vlc'
@@ -51,12 +52,13 @@ cask 'notion'
 cask 'rocket'
 cask 'runjs'
 cask 'signal'
-cask 'soundflowerbed'
 cask 'sourcetree'
 cask 'teamviewer'
 cask 'textbar'
 cask 'vanilla'
 cask 'zoomus'
+cask 'expressvpn'
+brew install --cask local
 
 cask 'postgres'
 cask 'redis'
@@ -65,6 +67,10 @@ cask 'redis'
 declare -a mas_apps=(
   '918858936'   # Airmail 4
   '441258766'   # Magnet
+  '1333542190'  # 1Password
+  '1351639930'  # Gifski
+  '425424353'   # The Unarchiver
+  '409183694'   # Keynote
 )
 
 for app in "${mas_apps[@]}"; do
